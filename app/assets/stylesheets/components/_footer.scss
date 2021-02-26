@@ -24,7 +24,12 @@
 }
 .footer-links a:hover {
   opacity: 1;
+  color: rgba(133, 62, 167, 1.00);
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.footer-text {
+  font-family: poppins;
 }

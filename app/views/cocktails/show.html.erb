@@ -1,4 +1,24 @@
-<h1><%= @cocktail.name %></h1>
+ <!-- navbar -->
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/dphsaovxy/image/upload/v1614293661/drink_neon__vimfcc.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-success" %>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!-- body -->
+<h1><strong><%= @cocktail.name %></strong></h1>
 <div class="container">
   <br>
 
@@ -6,7 +26,7 @@
 <div class="row">
     <div class="col-sm-12 col-md-6">
       <h3>Recipe</h3>
-      <table class="table table-bordered">
+      <table class="table table-bordered shadow-lg">
         <tbody>
           <thead>
             <th>Ingredient</th>
@@ -30,8 +50,18 @@
   </div>
 
 
-  <%=  link_to "create new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <%=  link_to "create new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
   <br>
   <br>
   <%=  link_to "cocktails", cocktails_path, class: "btn btn-secondary" %>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    🔨 <i class="fas fa-heart"></i> by J. Wilson
+  </div>
 </div>

@@ -1,8 +1,22 @@
 .card {
   margin-top: 32px;
-  border-radius: 8px;
+  border: none;
 }
 
 .card-img-top {
   border-radius: 8px 8px 0px 0px;
+}
+
+a {
+  font-family: poppins;
+  color: white;
+}
+
+a:hover {
+  color: rgba(246, 206, 223, 1.00);
+}
+
+.card-body {
+  background-color: rgba(133, 62, 167, 1.00);
+  border-radius: 0px 0px 8px 8px;
 }

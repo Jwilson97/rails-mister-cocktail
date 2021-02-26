@@ -1,10 +1,28 @@
+  <!-- navbar -->
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/dphsaovxy/image/upload/v1614293661/drink_neon__vimfcc.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-success" %>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!-- body -->
 <div class="background">
   <h1>List of 🍹's</h1>
 
   <div class="container">
-    <br>
-     <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-success" %>
-     <br>
+    <div class="row-container">
     <div class="row mb-5">
       <% @cocktails.each do |cocktail| %>
       <div class="col-12 col-md-6 col-lg-4">
@@ -20,15 +38,17 @@
       </div>
       <% end %>
     </div>
+    </div>
     <br>
     <blockquote class="blockquote text-right">
-      <p class="mb-0"> "I’ll drink at least 10 beers, and probably five mixed drinks[...], Every day." </p>
+      <p class="mb-0 footer-text"> "I’ll drink at least 10 beers, and probably five mixed drinks[...], Every day." </p>
       <footer class="blockquote-footer">WWE Superstar <cite title="Rick Flair">Rick Flair</cite></footer>
       </blockquote>
     <br>
     <br>
   </div>
 
+  <!-- footer -->
 <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>

@@ -1,4 +1,20 @@
 .btn-success {
   color: white;
+  border-radius: 8px;
+  background-color: rgba(89, 12, 130, 1.00);
+  border: none;
 }
 
+.btn-success:hover {
+  background-color: rgba(134, 19, 194, 1.00);
+}
+
+.btn-secondary {
+  background-color: rgba(242, 93, 157, 1.00);
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(244, 132, 180, 1.00);
+}
